@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noe Corp</title>
+    <!-- external styling -->
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- Material Icons (Google) -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+</head>
+<body>
+    <div class="wrapper">
+        <!-- ===================== NAVBAR ===================== -->
+        <header>
+            <nav id="web">
+                <div class="comp-logo">
+                    <a href="#"><img class="logo-noe" src="/assets/logo-noe.png"></a> 
+                </div>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#our-profile">Our Profile</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#message-us">Message Us</a></li>
+                </ul>
+                <span class="material-symbols-outlined" id="menu">menu</span>
+            </nav>
+       
+            <nav id="mobile">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#our-profile">Our Profile</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#message-us">Message Us</a></li>
+                </ul>
+                <span class="material-symbols-outlined" id="close">close</span>
+            </nav>
+
+            <!-- ===================== WELCOME ===================== -->
+            <section id="welcome" class="welcome">
+                <div class="description">
+                    <h1 id="welcome-speech">Hi User, Welcome to <span>Noe Corp</span></h1>
+                    <p>Noe Corp adalah perusahaan yang berfokus pada inovasi teknologi dan solusi bisnis modern. Kami berkomitmen untuk menghadirkan layanan terbaik yang membantu klien kami tumbuh dan berkembang di era digital.</p>
+                </div>
+            </section>
+        </header>
+        <span class="black-shadow"></span>
+
+        <!-- ===================== OUR-PROFILE ===================== -->
+        <section id="our-profile" class="our-profile">
+            <div class="our-profile-title">
+                <h2>Our Profile</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore nesciunt accusantium dolores necessitatibus. Ducimus, consectetur?</p>
+            </div>
+            
+            <div class="our-profile-description">
+                <p>Noe Corp adalah Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, quo.</p>
+                <img src="/assets/profile-2.jpg">
+                
+            </div>
+
+            <div class="our-profile-description">
+                <p>Noe Corp adalah Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, quo.</p>
+                <img src="/assets/profile-1.jpg">
+            </div>
+        </section>
+
+        <span class="wave"><img src="/assets/wave.png"></span>
+
+        <!-- ===================== Portfolio ===================== -->
+        <div class="outer-portfolio">
+            <section id="portfolio" class="portfolio">
+                <h2>Portfolio</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas vel praesentium laudantium!</p>
+
+                <div class="portfolio-images">
+                    <img src="/assets/headquarter-1.jpg">
+                    <img src="/assets/headquarter-1.jpg">
+                    <img src="/assets/headquarter-1.jpg">
+                </div>
+            </section>
+
+        </div>
+        
+        <!-- ===================== OUR-HEADQUARTER ===================== -->
+        <section id="our-headquarter" class="our-headquarter">
+            <h2>Our Headquarter</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas vel praesentium laudantium!</p>
+
+            <div class="headquarter">
+                <img src="/assets/headquarter-1.jpg">
+                <img src="/assets/headquarter-1.jpg">
+                <img src="/assets/headquarter-1.jpg">
+                <img src="/assets/headquarter-1.jpg">
+            </div>
+        </section>
+
+        <!-- ===================== MESSAGE-US ===================== -->
+        <div class="outer-message-us">
+            <section id="message-us" class="message-us">
+                <h2>Message Us</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur voluptatum non perferendis voluptates explicabo. Tempora.</p>
+
+                <div class="input-wrapper">
+                    <div class="inputUser">
+                        <label class="form-group" for="nama">Nama  :<input type="text" id="nama" name="nama"></label>
+                        <label class="form-group" for="tgl_lahir">Tanggal Lahir : <input type="date" id="tgl_lahir" name="tgl_lahir"></label>
+                        <div class="form-group">
+                            <p>Jenis Kelamin: </p>
+                            <div class="radio-group">
+                                <label><input type="radio" class="jenis_kelamin" name="jenis_kelamin" value="laki-laki" checked>Laki - laki</label>
+                                <label><input  class="jenis_kelamin" type="radio" name="jenis_kelamin" value="perempuan">Perempuan
+                                </label>
+                            </div>
+                        </div>
+                        <label class="form-group" for="pesan">Pesan: <textarea name="pesan" id="pesan"></textarea></label>
+                        <button type="submit" id="submit">Submit</button>
+                    </div>
+                
+                    
+                    <div class="outputUser">
+                        <!-- output di sini ... -->
+                    </div>
+                </div>
+            </section>
+        </div>
+        
+
+        <!-- ===================== FOOTER ===================== -->
+        <footer>
+            <p>&copy; 2025 Noe Corp. All rights reserved.</p>
+        </footer>
+    </div>
+    
+    <script src="/js/script.js"></script>
+</body>
+</html>

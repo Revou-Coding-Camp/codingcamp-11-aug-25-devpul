@@ -1,0 +1,469 @@
+/* font poppins */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:wght@200;300;400;500;600;700;800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+/* ======================================== VARIABLE */
+:root{
+    --secondary-color: #FED705;
+    --alternative-color: #E6C744;
+}
+/* ================================================= */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    width: 100%;
+     overflow-x: hidden;
+}
+
+/* ==================== WRAPPER */
+.wrapper{
+    width: 100%;
+    margin: auto;
+    background-color: white;
+}
+
+/* ALL IN ONE */
+p{
+    padding-bottom: 4rem;
+}
+
+header ,.our-headquarter, .portfolio{
+    height: 110vh;
+}
+
+header, section{
+    margin-bottom: 5rem;
+}
+
+a, button{
+    text-decoration: none;
+    color:black;
+    cursor: pointer;
+}
+
+button{
+    background-color: black;
+    outline: none;
+    border:none;
+    border-radius: 20px;
+    padding:0.75rem 0;
+    color:#fff;
+    font-weight: 500;
+    font-size: 1rem;
+    border:2px solid black;
+    transition: all 0.3s ease-out;
+}
+
+button:hover{
+    background-color: white;
+    color: black;
+    border:2px solid black;
+}
+
+nav#web, .our-profile ,.our-headquarter, .portfolio, .message-us{
+    width: 1200px;
+    margin: auto;
+}
+
+
+.our-profile ,.our-headquarter, .portfolio, .message-us{
+    text-align: center;
+}
+
+
+.message-us .input-wrapper{
+    text-align: left;
+}
+
+section{
+    padding: 4rem 0;
+}
+
+h2{
+
+    font-size: 3.5rem;
+}
+
+header, footer{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+span.wave{
+    position: absolute;
+    bottom: -75rem;
+    right: -5rem;
+ 
+    z-index: 1;
+}
+
+span.wave img{
+    width: 200px;
+}
+
+
+/* ==================== NAV */
+nav, nav#web ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+nav#web{
+    align-items: center;
+}
+
+nav#web .logo-noe{
+    width: 55px;
+}
+
+nav#web, section{
+    padding:2rem;
+}
+
+nav#web ul{
+    gap: 2rem;
+}
+
+nav ul li{
+ list-style: none;
+}
+
+nav#web ul li a{
+    font-size: 1.15rem;
+    font-weight: 500;
+    transition: all 0.2s ease-out;
+    padding:0.8rem;
+    border-radius: 20px;
+    color:#eee;
+}
+
+nav#mobile ul li a{
+    display: block;
+    margin-bottom: 2rem;
+}
+
+nav#mobile ul li a{
+    font-size: 1.15rem;
+    font-weight: 500;
+    transition: all 0.2s ease-out;
+    padding:0.5rem 2rem;
+    border-radius: 20px;
+    color:#333;
+}
+
+nav#web ul li a:hover, nav#mobile ul li a:hover {
+    background-color: black;
+    color: var(--secondary-color);
+    border-radius: 30px;
+}
+
+
+nav #menu, nav#mobile{
+    display: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+nav#mobile.active{
+    z-index: 9999999;
+}
+
+nav #menu, nav#mobile.active #close{
+    font-size: 40px;
+    margin:0.75rem;
+}
+
+/* ==================== WELCOME */
+header{
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.7),
+        rgba(0, 0, 0, 0.7)
+    ), url('/assets/welcome-banner-2.jpg');
+    color:#fff;
+}
+
+.welcome{
+    width: 1400px;
+    margin:auto;
+    display: flex;
+    height: 80vh;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.welcome .description{
+    padding: 4rem;
+    display: block;
+    border-radius: 20px;
+}
+
+.welcome img{
+    width: 500px;
+}
+
+.welcome h1{
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.welcome p{
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color:#ddd;
+    width: 90%;
+    margin: auto;
+}
+
+.welcome span{
+    color: var(--secondary-color);
+    border-radius: 35px;
+    padding:0.5rem;
+}
+
+.black-shadow{
+    width: 100%;
+    padding:0.2rem;
+    position: absolute;
+    bottom: 0;
+    box-shadow: 5px 5px 100px black;
+    background-color: black;
+    filter: blur(5px);
+}
+
+/* ==================== OUR-PROFILE */
+.our-profile{
+    position: relative;
+    height: 160vh;
+}
+
+.our-profile p{
+    z-index: 55555;
+}
+.our-profile-description:nth-child(2){
+    padding-bottom: 4rem;
+}
+
+.our-profile-description{
+    display: flex;
+     flex-direction: row-reverse;
+    justify-content: space-between;
+    gap:2rem;
+    padding-top: 4rem;
+    text-align: center;
+    align-items: center;
+    gap:10rem;
+}
+
+.our-profile-description:nth-child(2){
+ flex-direction: row;
+}
+
+.our-profile-description p{
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.our-profile-description img{
+    width: 500px;
+    height: 500px;
+    border-radius:10rem 2rem 5rem 2rem;
+    object-fit: cover;
+    transition: all 0.3s ease;
+}
+
+.our-profile-description img:hover{
+    transform: scale(0.9);
+    cursor: pointer;
+}
+
+
+/* ==================== PORTFOLIO */
+.outer-portfolio{
+    background-color: #E6C744;
+    width: 100%;
+    z-index: 999999999;
+}
+
+/* ==================== OUR-HEADQUARTER */
+.our-headquarter{
+}
+
+.headquarter img, .portfolio-images img{
+    width: 350px;
+}
+
+.headquarter, .portfolio-images{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:1rem;
+}
+
+/* ==================== MESSAGE-US */
+.outer-message-us{
+    width: 100%;
+    margin:auto;
+    background-color: var(--alternative-color);
+}
+
+.message-us{
+  
+}
+
+.input-wrapper{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding:2rem;
+    gap:4rem;
+}
+
+.form-group{
+    display: grid;
+    grid-template-columns: 150px 1fr;
+}
+
+.inputUser{
+    display: flex;
+    flex-direction: column;
+}
+
+.inputUser, input{
+    font-size: 0.95rem;
+}
+
+.radio-group{
+    display: flex;
+    align-items: center;
+}
+
+.inputUser button{
+    width: 100%;
+}
+
+.inputUser input, textarea{
+    margin-bottom: 1rem;
+    border-radius: 4px;
+    padding: 0.5rem;
+    border:none;
+}
+
+textarea{
+    height: 100px;
+    resize: none;
+}
+
+.outputUser{
+    border-radius: 4px;
+    background-color: #ffff;
+    padding:50px;
+    color:black;
+}
+
+
+/* ==================== FOOTER */
+footer{
+    height: 50vh;
+    background-color: black;
+}
+
+
+
+/* ==================== MAX WIDTH 1000px */
+@media only screen and (max-width: 1000px){
+    /* ==================== NAV */
+    nav#web, .our-profile ,.our-headquarter, .portfolio, .message-us, footer{
+        width: 100%;
+        margin: auto;
+    }
+
+    nav#web{
+        padding:1%;
+        width: 100%;
+        margin: auto;
+    }
+
+    nav#web ul{
+        display: none;
+    }
+
+    nav #menu{
+        display: block;
+        
+    }
+
+    nav#mobile.active{
+        display: flex;
+        flex-direction: row;
+        position: fixed;
+        top:0;
+        right: 0;
+        background-color: white;
+        height: 100vh;
+        width: 350px;
+        border-left: 2px solid gray;
+        color:black;
+    }
+
+    nav#mobile.active ul{
+        display: block;
+        position: absolute;
+        margin:3rem;
+        top:0;
+    }
+
+    nav#mobile.active ul li{
+        margin-bottom: 1rem;
+    }
+
+    nav#mobile.active #close{
+        top:0;
+        right: 0;
+        position: absolute;
+        animation: spin 0.3s ease;
+    }
+
+    @keyframes spin {
+        0%{
+            rotate: 0deg;
+        }
+
+        100%{
+            rotate: 180deg;
+        }
+    }
+
+    /* ==================== WELCOME */
+    .welcome{
+        width: 100%;
+    }
+
+    section{
+        padding:0;
+    }
+
+    /* ==================== MESSAGE-US */
+    .input-wrapper{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        width: 80%;
+        margin: auto;
+    }
+
+
+    /* ==================== OUR-HEADQUARTER */
+    .headquarter, .portfolio-images{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
