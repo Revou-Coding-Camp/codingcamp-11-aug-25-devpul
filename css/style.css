@@ -296,9 +296,6 @@ header{
 }
 
 /* ==================== OUR-HEADQUARTER */
-.our-headquarter{
-}
-
 .headquarter img, .portfolio-images img{
     width: 350px;
 }
@@ -316,9 +313,6 @@ header{
     background-color: var(--alternative-color);
 }
 
-.message-us{
-  
-}
 
 .input-wrapper{
     display: grid;
