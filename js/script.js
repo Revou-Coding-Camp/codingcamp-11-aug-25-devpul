@@ -1,12 +1,14 @@
 // ========== RUN FUNCTIONS
 sidebar();
-// welcomeSpeech();
+welcomeSpeech();
+
 /* ========== WELCOME SPEECH */
 function welcomeSpeech(){
     const h1 = document.createElement("h1");
     const username = document.getElementById("welcome-speech");
-
+    
     let inputUsername = prompt("Masukan Nama kamu: ");
+
     if(inputUsername.length > 0){
         username.innerHTML = `Hi ${inputUsername}, Welcome to <span>Noe Corp</span>.`;
     }
@@ -44,6 +46,8 @@ btnSubmit.addEventListener("click", function() {
     const pesan = document.querySelector("#pesan").value.trim();
     const p = document.createElement("p");
 
+    outputUser.innerHTML = "";
+
     let kosong = [];
     // kalau tidak ada value dari inputan
     if (!nama) kosong.push('Nama');
@@ -57,10 +61,6 @@ btnSubmit.addEventListener("click", function() {
         p.style.fontSize = "20px";
         p.innerHTML = `Harap masukan ${kosong.join(", ")}`;
         outputUser.appendChild(p);
-
-        setTimeout(() => {
-            p.remove();
-        }, 1100);
         return;
     }
 
@@ -72,3 +72,4 @@ btnSubmit.addEventListener("click", function() {
 
     outputUser.appendChild(p);
 });
+
